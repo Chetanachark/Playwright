@@ -29,7 +29,7 @@ export default defineConfig({
 
   // ✅ IMPORTANT FOR CI + GITHUB ACTIONS
   fullyParallel: true,
-  retries: process.env.CI ? 1 : 0,
+  retries: process.env.CI ? 2 : 1,
   workers: process.env.CI ? 1 : undefined,
 
   use: {
@@ -43,7 +43,7 @@ export default defineConfig({
 
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    video: process.env.CI ? 'retain-on-failure' : 'off',
+    video:'retain-on-failure',
   },
 
   reporter: [
