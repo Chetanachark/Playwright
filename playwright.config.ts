@@ -21,7 +21,7 @@ export default defineConfig({
 
   use: {
     baseURL: process.env.BASE_URL,
-    headless: true,
+   headless: process.env.CI ? true : false,
     trace: 'on',
   },
 });
