@@ -1,13 +1,11 @@
-function required(name: string): string {
-  const value = process.env[name];
-  if (!value) {
-    throw new Error(`Missing env variable: ${name}`);
-  }
-  return value;
-}
+import * as dotenv from 'dotenv';
+
+const env = process.env.TEST_ENV || 'dev';
+
+dotenv.config({ path: `.env.${env}` });
 
 export const envConfig = {
-  baseURL: required("BASE_URL"),
-  username: required("TEST_USERNAME"),
-  password: required("TEST_PASSWORD"),
+  baseURL: process.env.BASE_URL!,
+  username: process.env.TEST_USERNAME!,
+  password: process.env.TEST_PASSWORD!,
 };
