@@ -5,6 +5,9 @@ on:
     branches: [main]
   pull_request:
 
+  schedule:
+    - cron: "30 2 * * *"   # 8:00 AM IST daily
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -13,20 +16,44 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.59.1-jammy
 
     steps:
-      - name: Checkout repo
+      - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: 🧾 Pipeline start logs
+        run: |
+          echo "===================================="
+          echo "🚀 PLAYWRIGHT BDD PIPELINE STARTED"
+          echo "ENV: dev"
+          echo "NODE VERSION:"
+          node -v
+          echo "===================================="
+
+      - name: 📦 Install dependencies
         run: npm ci
 
-      - name: Run Playwright BDD tests (DEV)
-        run: npx playwright test
+      - name: 🧪 Run Playwright BDD tests (DEV)
+        run: |
+          echo "===================================="
+          echo "▶ Executing tests..."
+          echo "===================================="
+          npx playwright test
+          echo "===================================="
+          echo "✔ Test execution completed"
+          echo "===================================="
         env:
           TEST_ENV: dev
+          DEBUG: pw:api
 
-      - name: Upload report
+      - name: 📊 Upload HTML report
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-report
           path: playwright-report
+
+      - name: 🧾 Pipeline end logs
+        if: always()
+        run: |
+          echo "===================================="
+          echo "🏁 PIPELINE FINISHED"
+          echo "===================================="

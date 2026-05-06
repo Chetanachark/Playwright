@@ -9,9 +9,6 @@ Before(async () => {
   console.log("🚀 Scenario started");
 });
 
-After(async () => {
-  console.log("✅ Scenario finished");
-});
 
 Given('I open login page', async ({ page }) => {
   await page.goto('/loginpagePractise/');
@@ -29,4 +26,7 @@ When('I login with valid credentials', async ({ page }) => {
 
 Then('I see shop page', async ({ page }) => {
   await expect(page).toHaveURL(/shop/);
+});
+After(async () => {
+  console.log("✅ Scenario finished");
 });
