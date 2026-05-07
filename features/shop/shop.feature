@@ -21,7 +21,7 @@ Feature: Shop page functionality
         Then Cart badge should show "3"
 
     @smoke
-    Scenario: User can add multiple product to cart
+    Scenario: User can tow  product to cart
         When I add multiple items to cart and check cart count
             |iphone X       |
             |Samsung Note 8 |
