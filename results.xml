@@ -1,0 +1,14 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="10.637461">
+<testsuite name="features\shop\shop.feature.spec.js" timestamp="2026-05-07T11:25:48.178Z" hostname="" tests="1" failures="0" skipped="0" time="1.419" errors="0">
+<testcase name="Shop page functionality › User can add multiple product to cart" classname="features\shop\shop.feature.spec.js" time="1.419">
+<system-out>
+<![CDATA[🚀 Test suite started
+🟢 Scenario started
+🚀 Starting Multi user test
+🧹 Multi user test finished
+🏁 Scenario finished
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

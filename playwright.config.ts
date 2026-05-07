@@ -48,7 +48,9 @@ export default defineConfig({
   },
 
   reporter: [
-    ['list'],
-    ['html', { open: 'never' }]
-  ],
+  ['list'],
+  ['html'],
+  ['junit', { outputFile: 'results.xml' }],
+  ['./reporter/enterprise-reporter.ts']
+]
 });
