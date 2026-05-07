@@ -19,5 +19,12 @@ Feature: Shop page functionality
             |Samsung Note 8 |
             |Nokia Edge     |
         Then Cart badge should show "3"
+
+    @smoke
+    Scenario: User can add multiple product to cart
+        When I add multiple items to cart and check cart count
+            |iphone X       |
+            |Samsung Note 8 |
+        Then Cart badge should show "2"
         
     
