@@ -26,6 +26,7 @@ const testDir = defineBddConfig({
 // ===============================
 export default defineConfig({
   testDir,
+   globalSetup: require.resolve('./tests/global-setup'),
 
   // ✅ IMPORTANT FOR CI + GITHUB ACTIONS
   fullyParallel: true,

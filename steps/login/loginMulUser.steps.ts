@@ -4,16 +4,17 @@ import { expect } from '@playwright/test';
 
 const { Given, When, Then, Before, After } = createBdd(test);
 Before(async ({ page }) => {
-  console.log("🚀 Starting scenario");
+  console.log("🚀 Starting Multi user test");
 });
 After(async ({ page }) => {
-  console.log("🧹 Scenario finished");
+  console.log("🧹 Multi user test finished");
 });
 
 
 Given("I open the login page", async ({ page }) => {
 
   await page.goto("/loginpagePractise/");
+
   
 });
 

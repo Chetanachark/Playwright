@@ -1,4 +1,4 @@
-// Generated from: features\auth\loginMulUser.feature
+// Generated from: features\login\loginMulUser.feature
 import { test } from "playwright-bdd";
 
 test.describe('Login functionality', () => {
@@ -28,7 +28,7 @@ test.afterEach('AfterEach Hooks', ({ $runScenarioHooks, page }) => $runScenarioH
 
 test.use({
   $test: [({}, use) => use(test), { scope: 'test', box: true }],
-  $uri: [({}, use) => use('features\\auth\\loginMulUser.feature'), { scope: 'test', box: true }],
+  $uri: [({}, use) => use('features\\login\\loginMulUser.feature'), { scope: 'test', box: true }],
   $bddFileData: [({}, use) => use(bddFileData), { scope: "test", box: true }],
 });
 
