@@ -21,7 +21,7 @@ test.describe('Shop page functionality', () => {
     await Then('Cart badge should show "3"', null, { page }); 
   });
 
-  test('User can add multiple product to cart', { tag: ['@smoke'] }, async ({ When, Then, page }) => { 
+  test('User can tow  product to cart', { tag: ['@smoke'] }, async ({ When, Then, page }) => { 
     await When('I add multiple items to cart and check cart count', {"dataTable":{"rows":[{"cells":[{"value":"iphone X"}]},{"cells":[{"value":"Samsung Note 8"}]}]}}, { page }); 
     await Then('Cart badge should show "2"', null, { page }); 
   });

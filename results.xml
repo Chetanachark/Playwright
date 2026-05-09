@@ -1,21 +1,41 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="14.187006">
-<testsuite name="features\shop\shop.feature.spec.js" timestamp="2026-05-07T11:55:09.159Z" hostname="" tests="2" failures="0" skipped="0" time="4.461" errors="0">
-<testcase name="Shop page functionality › Logged in user can access shop page and view products" classname="features\shop\shop.feature.spec.js" time="2.064">
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="17.904771">
+<testsuite name="features\shop\shop.feature.spec.js" timestamp="2026-05-08T04:54:12.887Z" hostname="" tests="4" failures="0" skipped="0" time="12.992" errors="0">
+<testcase name="Shop page functionality › Logged in user can access shop page and view products" classname="features\shop\shop.feature.spec.js" time="3.072">
 <system-out>
 <![CDATA[🚀 Test suite started
-🚀 Starting Multi user test
 🟢 Scenario started
-🏁 Scenario finished
+🚀 Starting Multi user test
 🧹 Multi user test finished
+🏁 Scenario finished
 ]]>
 </system-out>
 </testcase>
-<testcase name="Shop page functionality › User can add product to cart" classname="features\shop\shop.feature.spec.js" time="2.397">
+<testcase name="Shop page functionality › User can add product to cart" classname="features\shop\shop.feature.spec.js" time="3.186">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
 🚀 Starting Multi user test
 Adding product:iphone X
+🧹 Multi user test finished
+🏁 Scenario finished
+]]>
+</system-out>
+</testcase>
+<testcase name="Shop page functionality › User can add multiple product to cart" classname="features\shop\shop.feature.spec.js" time="3.289">
+<system-out>
+<![CDATA[🚀 Test suite started
+🟢 Scenario started
+🚀 Starting Multi user test
+🧹 Multi user test finished
+🏁 Scenario finished
+]]>
+</system-out>
+</testcase>
+<testcase name="Shop page functionality › User can tow  product to cart" classname="features\shop\shop.feature.spec.js" time="3.445">
+<system-out>
+<![CDATA[🚀 Test suite started
+🟢 Scenario started
+🚀 Starting Multi user test
 🧹 Multi user test finished
 🏁 Scenario finished
 ]]>
