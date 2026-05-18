@@ -1,16 +1,44 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="17.904771">
-<testsuite name="features\shop\shop.feature.spec.js" timestamp="2026-05-08T04:54:12.887Z" hostname="" tests="4" failures="0" skipped="0" time="12.992" errors="0">
-<testcase name="Shop page functionality › Logged in user can access shop page and view products" classname="features\shop\shop.feature.spec.js" time="3.072">
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="17.196689999999943">
+<testsuite name="features\login\loginMulUser.feature.spec.js" timestamp="2026-05-13T06:18:23.144Z" hostname="" tests="2" failures="0" skipped="0" time="27.216" errors="0">
+<testcase name="Login functionality › Login with multiple users › Example #1" classname="features\login\loginMulUser.feature.spec.js" time="13.87">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
 🚀 Starting Multi user test
 🧹 Multi user test finished
 🏁 Scenario finished
+
+[[ATTACHMENT|test-results\features-login-loginMulUse-9feb3-th-multiple-users-Example-1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Shop page functionality › User can add product to cart" classname="features\shop\shop.feature.spec.js" time="3.186">
+<testcase name="Login functionality › Login with multiple users › Example #2" classname="features\login\loginMulUser.feature.spec.js" time="13.346">
+<system-out>
+<![CDATA[🚀 Test suite started
+🟢 Scenario started
+🚀 Starting Multi user test
+🧹 Multi user test finished
+🏁 Scenario finished
+
+[[ATTACHMENT|test-results\features-login-loginMulUse-90c54-th-multiple-users-Example-2\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="features\shop\shop.feature.spec.js" timestamp="2026-05-13T06:18:23.144Z" hostname="" tests="4" failures="0" skipped="0" time="34.758" errors="0">
+<testcase name="Shop page functionality › Logged in user can access shop page and view products" classname="features\shop\shop.feature.spec.js" time="8.566">
+<system-out>
+<![CDATA[🚀 Test suite started
+🟢 Scenario started
+🚀 Starting Multi user test
+🧹 Multi user test finished
+🏁 Scenario finished
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Shop page functionality › User can add product to cart" classname="features\shop\shop.feature.spec.js" time="8.611">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
@@ -18,26 +46,32 @@
 Adding product:iphone X
 🧹 Multi user test finished
 🏁 Scenario finished
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Shop page functionality › User can add multiple product to cart" classname="features\shop\shop.feature.spec.js" time="3.289">
+<testcase name="Shop page functionality › User can add multiple product to cart" classname="features\shop\shop.feature.spec.js" time="8.856">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
 🚀 Starting Multi user test
 🧹 Multi user test finished
 🏁 Scenario finished
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Shop page functionality › User can tow  product to cart" classname="features\shop\shop.feature.spec.js" time="3.445">
+<testcase name="Shop page functionality › User can tow  product to cart" classname="features\shop\shop.feature.spec.js" time="8.725">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
 🚀 Starting Multi user test
 🧹 Multi user test finished
 🏁 Scenario finished
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\trace.zip]]
 ]]>
 </system-out>
 </testcase>
