@@ -3,13 +3,13 @@ import { test } from 'playwright-bdd';
 import { expect } from '@playwright/test';
 
 
-const { Given, When, Then, Before, After } = createBdd(test);
 
+const { Given, When, Then, Before, After } = createBdd(test);
 
 //open shop page
 Given('I open shop page', async ({ page }) => {
   // user is already authenticated via auth.json
-  await page.goto('/angularpractice/shop');
+  page.goto('pages/ProductPage.ts')
 });
 
 //showing all products

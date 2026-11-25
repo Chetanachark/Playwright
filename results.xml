@@ -1,44 +1,140 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="17.196689999999943">
-<testsuite name="features\login\loginMulUser.feature.spec.js" timestamp="2026-05-13T06:18:23.144Z" hostname="" tests="2" failures="0" skipped="0" time="27.216" errors="0">
-<testcase name="Login functionality › Login with multiple users › Example #1" classname="features\login\loginMulUser.feature.spec.js" time="13.87">
+<testsuites id="" name="" tests="6" failures="1" skipped="0" errors="3" time="97.20231">
+<testsuite name="features\login\loginMulUser.feature.spec.js" timestamp="2026-11-25T09:17:49.706Z" hostname="" tests="2" failures="0" skipped="0" time="19.4" errors="0">
+<testcase name="Login functionality › Login with multiple users › Example #1" classname="features\login\loginMulUser.feature.spec.js" time="9.666">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
 🚀 Starting Multi user test
 🧹 Multi user test finished
 🏁 Scenario finished
-
-[[ATTACHMENT|test-results\features-login-loginMulUse-9feb3-th-multiple-users-Example-1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login functionality › Login with multiple users › Example #2" classname="features\login\loginMulUser.feature.spec.js" time="13.346">
+<testcase name="Login functionality › Login with multiple users › Example #2" classname="features\login\loginMulUser.feature.spec.js" time="9.734">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
 🚀 Starting Multi user test
 🧹 Multi user test finished
 🏁 Scenario finished
-
-[[ATTACHMENT|test-results\features-login-loginMulUse-90c54-th-multiple-users-Example-2\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="features\shop\shop.feature.spec.js" timestamp="2026-05-13T06:18:23.144Z" hostname="" tests="4" failures="0" skipped="0" time="34.758" errors="0">
-<testcase name="Shop page functionality › Logged in user can access shop page and view products" classname="features\shop\shop.feature.spec.js" time="8.566">
+<testsuite name="features\shop\shop.feature.spec.js" timestamp="2026-11-25T09:17:49.706Z" hostname="" tests="4" failures="1" skipped="0" time="195.794" errors="3">
+<testcase name="Shop page functionality › Logged in user can access shop page and view products" classname="features\shop\shop.feature.spec.js" time="9.412">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
 🚀 Starting Multi user test
 🧹 Multi user test finished
 🏁 Scenario finished
+🏁 Test suite finished
 
-[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\trace.zip]]
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\video.webm]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\error-context.md]]
+🚀 Test suite started
+🟢 Scenario started
+🚀 Starting Multi user test
+🧹 Multi user test finished
+🏁 Scenario finished
+🏁 Test suite finished
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\trace.zip]]
 ]]>
 </system-out>
+<failure message="expect(received).toBeGreaterThan(expected)" type="expect.toBeGreaterThan">
+<![CDATA[  features\shop\shop.feature.spec.js:10:7 › Shop page functionality › Logged in user can access shop page and view products @smoke 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+       at ..\steps\shop\products.steps.ts:27
+
+    
+        at Object.<anonymous> (D:\PlaywrightAutomation\steps\shop\products.steps.ts:27:28)
+        at D:\PlaywrightAutomation\.features-gen\features\shop\shop.feature.spec.js:11:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\error-context.md
+
+    Error Context: ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+       at ..\steps\shop\products.steps.ts:27
+
+    
+        at Object.<anonymous> (D:\PlaywrightAutomation\steps\shop\products.steps.ts:27:28)
+        at D:\PlaywrightAutomation\.features-gen\features\shop\shop.feature.spec.js:11:5
+
+    Error: page.goto: Test ended.
+    Call log:
+      - navigating to "https://rahulshettyacademy.com/pages/ProductPage.ts", waiting until "load"
+
+
+       at ..\steps\shop\products.steps.ts:18
+
+      16 | Then("products should be visible",async({page})=>{
+      17 |   const product =  page.locator('.card');
+    > 18 |   const count = await product.count();
+         |        ^
+      19 |   expect(count).toBeGreaterThan(0);
+      20 | })
+      21 |
+        at Object.<anonymous> (D:\PlaywrightAutomation\steps\shop\products.steps.ts:18:8)
+        at D:\PlaywrightAutomation\.features-gen\features\shop\shop.feature.spec.js:7:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\error-context.md
+
+    Error Context: ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\error-context.md
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\features-shop-shop.feature-773a9-shop-page-and-view-products-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 </testcase>
-<testcase name="Shop page functionality › User can add product to cart" classname="features\shop\shop.feature.spec.js" time="8.611">
+<testcase name="Shop page functionality › User can add product to cart" classname="features\shop\shop.feature.spec.js" time="62.087">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
@@ -46,34 +142,344 @@
 Adding product:iphone X
 🧹 Multi user test finished
 🏁 Scenario finished
+🏁 Test suite finished
 
-[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\trace.zip]]
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\video.webm]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\error-context.md]]
+🚀 Test suite started
+🟢 Scenario started
+🚀 Starting Multi user test
+Adding product:iphone X
+🧹 Multi user test finished
+🏁 Scenario finished
+🏁 Test suite finished
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\trace.zip]]
 ]]>
 </system-out>
+<error message="Test timeout of 30000ms exceeded." type="Error">
+<![CDATA[  features\shop\shop.feature.spec.js:14:7 › Shop page functionality › User can add product to cart @smoke › When I add "iphone X" to cart 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.card').filter({ hasText: 'iphone X' }).locator('.btn-info')
+        - waiting for" https://rahulshettyacademy.com/pages/ProductPage.ts" navigation to finish...
+        - navigated to "https://rahulshettyacademy.com/pages/ProductPage.ts"
+
+
+       at ..\steps\shop\addToCart.steps.ts:18
+
+      16 | // for multiple products
+      17 | When('I add multiple items to cart and check cart count', async ({ page },table) => {
+    > 18 |   const products = table.raw().flat();
+         |                                      ^
+      19 |   const productCount = products.length;
+      20 |   for(const productName of products){
+      21 |      const product =  page.locator('.card').filter({hasText:productName});
+        at Object.<anonymous> (D:\PlaywrightAutomation\steps\shop\addToCart.steps.ts:18:38)
+        at D:\PlaywrightAutomation\.features-gen\features\shop\shop.feature.spec.js:15:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\error-context.md
+
+    Error Context: ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.card').filter({ hasText: 'iphone X' }).locator('.btn-info')
+        - waiting for" https://rahulshettyacademy.com/pages/ProductPage.ts" navigation to finish...
+        - navigated to "https://rahulshettyacademy.com/pages/ProductPage.ts"
+
+
+       at ..\steps\shop\addToCart.steps.ts:18
+
+      16 | // for multiple products
+      17 | When('I add multiple items to cart and check cart count', async ({ page },table) => {
+    > 18 |   const products = table.raw().flat();
+         |                                      ^
+      19 |   const productCount = products.length;
+      20 |   for(const productName of products){
+      21 |      const product =  page.locator('.card').filter({hasText:productName});
+        at Object.<anonymous> (D:\PlaywrightAutomation\steps\shop\addToCart.steps.ts:18:38)
+        at D:\PlaywrightAutomation\.features-gen\features\shop\shop.feature.spec.js:15:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\error-context.md
+
+    Error Context: ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\features-shop-shop.feature-da3c7-ser-can-add-product-to-cart-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
 </testcase>
-<testcase name="Shop page functionality › User can add multiple product to cart" classname="features\shop\shop.feature.spec.js" time="8.856">
+<testcase name="Shop page functionality › User can add multiple product to cart" classname="features\shop\shop.feature.spec.js" time="62.103">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
 🚀 Starting Multi user test
 🧹 Multi user test finished
 🏁 Scenario finished
+🏁 Test suite finished
 
-[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\trace.zip]]
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\video.webm]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\error-context.md]]
+🚀 Test suite started
+🟢 Scenario started
+🚀 Starting Multi user test
+🧹 Multi user test finished
+🏁 Scenario finished
+🏁 Test suite finished
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\trace.zip]]
 ]]>
 </system-out>
+<error message="Test timeout of 30000ms exceeded." type="Error">
+<![CDATA[  features\shop\shop.feature.spec.js:19:7 › Shop page functionality › User can add multiple product to cart @regression › When I add multiple items to cart and check cart count 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.card').filter({ hasText: 'iphone X' }).locator('.btn-info')
+        - waiting for" https://rahulshettyacademy.com/pages/ProductPage.ts" navigation to finish...
+        - navigated to "https://rahulshettyacademy.com/pages/ProductPage.ts"
+
+
+       at ..\steps\shop\addToCart.steps.ts:31
+
+      29 | )?.replace(/\D/g, '');
+      30 |  expect(checkoutButtonCount).toEqual(cartCount);
+    > 31 |
+         | ^
+      32 | });
+      33 |
+      34 |
+        at Object.<anonymous> (D:\PlaywrightAutomation\steps\shop\addToCart.steps.ts:31:40)
+        at D:\PlaywrightAutomation\.features-gen\features\shop\shop.feature.spec.js:20:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\error-context.md
+
+    Error Context: ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.card').filter({ hasText: 'iphone X' }).locator('.btn-info')
+        - waiting for" https://rahulshettyacademy.com/pages/ProductPage.ts" navigation to finish...
+        - navigated to "https://rahulshettyacademy.com/pages/ProductPage.ts"
+
+
+       at ..\steps\shop\addToCart.steps.ts:31
+
+      29 | )?.replace(/\D/g, '');
+      30 |  expect(checkoutButtonCount).toEqual(cartCount);
+    > 31 |
+         | ^
+      32 | });
+      33 |
+      34 |
+        at Object.<anonymous> (D:\PlaywrightAutomation\steps\shop\addToCart.steps.ts:31:40)
+        at D:\PlaywrightAutomation\.features-gen\features\shop\shop.feature.spec.js:20:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\error-context.md
+
+    Error Context: ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\features-shop-shop.feature-e640d-dd-multiple-product-to-cart-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
 </testcase>
-<testcase name="Shop page functionality › User can tow  product to cart" classname="features\shop\shop.feature.spec.js" time="8.725">
+<testcase name="Shop page functionality › User can tow  product to cart" classname="features\shop\shop.feature.spec.js" time="62.192">
 <system-out>
 <![CDATA[🚀 Test suite started
 🟢 Scenario started
 🚀 Starting Multi user test
 🧹 Multi user test finished
 🏁 Scenario finished
+🏁 Test suite finished
 
-[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\trace.zip]]
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\video.webm]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\error-context.md]]
+🚀 Test suite started
+🟢 Scenario started
+🚀 Starting Multi user test
+🧹 Multi user test finished
+🏁 Scenario finished
+🏁 Test suite finished
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\trace.zip]]
 ]]>
 </system-out>
+<error message="Test timeout of 30000ms exceeded." type="Error">
+<![CDATA[  features\shop\shop.feature.spec.js:24:7 › Shop page functionality › User can tow  product to cart @smoke › When I add multiple items to cart and check cart count 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.card').filter({ hasText: 'iphone X' }).locator('.btn-info')
+        - waiting for" https://rahulshettyacademy.com/pages/ProductPage.ts" navigation to finish...
+        - navigated to "https://rahulshettyacademy.com/pages/ProductPage.ts"
+
+
+       at ..\steps\shop\addToCart.steps.ts:31
+
+      29 | )?.replace(/\D/g, '');
+      30 |  expect(checkoutButtonCount).toEqual(cartCount);
+    > 31 |
+         | ^
+      32 | });
+      33 |
+      34 |
+        at Object.<anonymous> (D:\PlaywrightAutomation\steps\shop\addToCart.steps.ts:31:40)
+        at D:\PlaywrightAutomation\.features-gen\features\shop\shop.feature.spec.js:25:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\error-context.md
+
+    Error Context: ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.card').filter({ hasText: 'iphone X' }).locator('.btn-info')
+        - waiting for" https://rahulshettyacademy.com/pages/ProductPage.ts" navigation to finish...
+        - navigated to "https://rahulshettyacademy.com/pages/ProductPage.ts"
+
+
+       at ..\steps\shop\addToCart.steps.ts:31
+
+      29 | )?.replace(/\D/g, '');
+      30 |  expect(checkoutButtonCount).toEqual(cartCount);
+    > 31 |
+         | ^
+      32 | });
+      33 |
+      34 |
+        at Object.<anonymous> (D:\PlaywrightAutomation\steps\shop\addToCart.steps.ts:31:40)
+        at D:\PlaywrightAutomation\.features-gen\features\shop\shop.feature.spec.js:25:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\error-context.md
+
+    Error Context: ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\features-shop-shop.feature-276ba-ser-can-tow-product-to-cart-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
 </testcase>
 </testsuite>
 </testsuites>
